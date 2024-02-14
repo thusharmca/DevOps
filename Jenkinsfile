@@ -12,12 +12,7 @@ pipeline {
                 echo 'Test Process'
             }
         } 
-        stage('Deploy') {
-            steps {
-                echo 'Deploy Process'
-            }
-        }
-    }
+           }
     post {
         always{
             emailext body: 'pipeline demo', subject: 'pipeline', to: 'thusharthimmaiah07@gmail.com'
