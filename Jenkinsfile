@@ -7,15 +7,11 @@ pipeline {
                 echo 'Build Process'
             }
         }
-    }
-   stages {
         stage('Test') {
             steps {
                 echo 'Test Process'
             }
         }
-    }
-   stages {
         stage('Deploy') {
             steps {
                 echo 'Deploy Process'
